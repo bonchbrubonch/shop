@@ -3,3 +3,618 @@
     width: calc(20% - 3rem);
   }
 }
+
+
+@media (max-width: 1024px) {
+
+  .header__tel {
+    margin: 0 0 0 auto;
+    font-size: 0;
+  }
+
+  .intro__line,
+  .intro__inner-left,
+  .header__languege,
+  .header__user,
+  .header__faboretes {
+    display: none;
+  }
+
+  .intro__inner-right {
+    margin: 0;
+    width: 100%;
+  }
+
+  .card {
+    width: calc(33.33333% - 3rem);
+  }
+
+  .intro__slider {
+    margin: 0;
+  }
+
+  .intro__item-inner,
+  .banner__inner,
+  .banner--page .banner__inner {
+    max-width: 70%;
+    padding: 6rem 5rem 6rem 4.7rem;
+  }
+
+  .intro__item-inner h2,
+  .banner h4 {
+    font-size: 3rem;
+  }
+
+  .intro__item-inner p,
+  .banner p {
+    font-size: 1.6rem;
+  }
+
+  .intro__item-box s {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .intro__item-box b {
+    font-size: 2.2rem;
+  }
+
+  .intro__btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  .intro {
+    padding: 2.8rem 0 4.5rem;
+  }
+
+  .popular {
+    padding: 4.5rem 0 4.5rem;
+  }
+
+  .title {
+    font-size: 3.2rem;
+  }
+
+  .popular__top {
+    margin: 0 0 4rem 0;
+  }
+
+  .preference ul {
+    flex-direction: column;
+  }
+
+  .preference__item {
+    width: calc(100% - 3rem);
+    margin: 0 0 1.7rem 3rem;
+  }
+
+  .preference h5 {
+    font-size: 2.8rem;
+  }
+
+  .preference__inner {
+    max-width: 70%;
+    min-height: 27.8rem;
+  }
+
+  .card__img {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .banner {
+    padding: 3.5rem 0 3.5rem;
+  }
+
+  .review {
+    padding: 3.5rem 0;
+  }
+
+  .join {
+    padding: 2.6rem 0 7rem;
+  }
+
+  .join__inner {
+    flex-direction: column;
+  }
+
+  .join__left {
+    padding: 0;
+    margin: 0 0 2rem 0;
+    width: 100%;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .join__right {
+    width: 100%;
+  }
+
+  .footer__inner {
+    flex-wrap: wrap;
+  }
+
+  .footer__box,
+  .footer__coll,
+  .footer__date,
+  .footer nav,
+  .footer__soc {
+    width: 50%;
+    margin: 0 0 2rem 0;
+  }
+
+  .footer__box p {
+    width: 50%;
+  }
+
+  .card__like {
+    top: 1.5rem;
+    right: .5rem;
+  }
+
+  .box__left {
+    display: none;
+  }
+
+  .box__right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .box {
+    padding: 0;
+  }
+
+  .category li {
+    width: calc(50% - 3rem);
+  }
+
+  .category__title {
+    font-size: 3rem;
+  }
+
+  .category h6 {
+    font-size: 1.6rem;
+  }
+
+  .sale b {
+    font-size: 5rem;
+  }
+
+  .sale h5 {
+    font-size: 2rem;
+  }
+
+  .sale p {
+    font-size: 1.2rem;
+  }
+
+  .sale__slider-inner {
+    min-height: 40rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .header__inner {
+    height: 5rem;
+  }
+
+  .card {
+    width: calc(50% - 3rem);
+  }
+
+  .intro__item-inner,
+  .banner__inner {
+    max-width: 70%;
+    padding: 3.5rem 3rem 4rem 2.5rem;
+  }
+
+  .intro__item-inner h2,
+  .banner h4 {
+    font-size: 2.2rem;
+  }
+
+  .intro__item-inner p,
+  .banner p {
+    font-size: 1.2rem;
+  }
+
+  .intro__item-box s {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .intro__item-box b {
+    font-size: 2rem;
+  }
+
+  .preference__inner {
+    min-height: auto;
+    padding: 3.5rem 3rem 4rem 2.5rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .review .left {
+    top: -5.8rem;
+  }
+
+  .preference h5 {
+    font-size: 2rem;
+  }
+
+  .banner__item>img {
+    right: -4rem;
+    bottom: -8rem;
+    width: 30.8rem;
+    height: 31.3rem;
+  }
+
+  .up {
+    right: 1rem;
+  }
+
+  .sale__slider-inner {
+    min-height: 34.6rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .product-list {
+    margin: 0 0 0 -1.5rem;
+  }
+
+  .card {
+    width: calc(50% - 1.5rem);
+    margin: 0 0 1.5rem 1.5rem;
+  }
+
+  .header__logo {
+    width: 4.8rem;
+    height: 1.2rem;
+  }
+
+  .intro {
+    padding: 1.8rem 0 2.5rem;
+  }
+
+  .banner__inner,
+  .intro__item-inner {
+    max-width: 100%;
+    width: 100%;
+    padding: 2.5rem 3rem 7rem 2rem;
+  }
+
+  .banner h4,
+  .intro__item-inner h2 {
+    font-size: 3.4rem;
+    margin: 0px 0 1rem 0;
+  }
+
+  .banner p,
+  .intro__item-inner p {
+    font-size: 1.6rem;
+  }
+
+  .intro__item-box {
+    display: flex;
+    flex-direction: column;
+    margin: 2.8rem 0 3.3rem;
+  }
+
+  .intro__item-box b {
+    margin: 0;
+  }
+
+  .intro__item-box s {
+    margin: 0 0 1.3rem 0;
+    font-size: 2.4rem;
+    line-height: 120%;
+  }
+
+  .intro__item-box b {
+    font-size: 3.2rem;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .slick-dots {
+    right: 3%;
+    bottom: 1.5%;
+    padding: .8rem 1rem;
+  }
+
+  .slick-dots button {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  .intro__item {
+    border-radius: 1.5rem;
+  }
+
+  .popular {
+    padding: 3.7rem 0 3rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .btn-all {
+    text-transform: capitalize;
+
+    span {
+      display: none;
+    }
+  }
+
+  .popular__top {
+    align-items: flex-end;
+  }
+
+  .popular__top {
+    margin: 0 0 3rem 0;
+  }
+
+  .card__like {
+    top: 0;
+    right: 0;
+  }
+
+  .card__stickers {
+    top: 0.8rem;
+    left: 0.8rem;
+  }
+
+  .card__stickers li {
+    padding: 0.2rem 0.4rem;
+    border-radius: .3rem;
+  }
+
+  .card__img {
+    padding: 2.8rem 2rem 1.8rem 2rem;
+    margin: 0 0 0.8rem 0;
+  }
+
+  .card__img img {
+    width: 88%;
+    height: 88%;
+  }
+
+  .card__item-inner {
+    padding: 0 .4rem;
+  }
+
+  .card h4 {
+    font-size: 1.2rem;
+    margin: 0 0 0.7rem 0;
+  }
+
+  .card .rateYo {
+    zoom: .7;
+  }
+
+  .card__amount {
+    font-size: .8rem;
+    margin: 0.3rem 0 0 0;
+  }
+
+  .card__price {
+    font-size: 1.2rem;
+  }
+
+  .card__price-new {
+    font-size: 1.6rem;
+  }
+
+  .card__rate-wrap {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .preference {
+    padding: 1.5rem 0 .5rem;
+  }
+
+  .preference__inner {
+    max-width: 100%;
+    padding: 3.5rem 3rem 4rem 2rem;
+  }
+
+  .preference span,
+  .banner span {
+    padding: 0.4rem 0.7rem;
+    font-size: 1.2rem;
+  }
+
+  .preference .btn-link,
+  .banner .btn-link {
+    font-size: 1.4rem;
+  }
+
+  .banner {
+    padding: 1.5rem 0 2.5rem;
+  }
+
+  .banner h4 {
+    font-size: 2.4rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .banner__inner {
+    padding: 2.5rem 3rem 2.8rem 2rem;
+  }
+
+  .banner--page .banner__inner {
+    padding: 2.5rem 3rem 2.8rem 2rem;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .review .title {
+    padding: 0 40% .6rem 0;
+  }
+
+  .review .slick-list {
+    margin: -4rem 0 0 -1.5rem;
+  }
+
+  .review .slick-arrow {
+    top: -0.6rem;
+  }
+
+  .review .left {
+    top: -0.8rem;
+  }
+
+  .review h5 {
+    font-size: 1rem;
+  }
+
+  .review p {
+    font-size: 1.2rem;
+    -ms-line-clamp: 6;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+  }
+
+  .review__btn {
+    padding: 0;
+    font-size: 1.2rem;
+  }
+
+  .review {
+    padding: 3.5rem 0 0;
+  }
+
+  .join {
+    padding: 2.3rem 0 5rem;
+  }
+
+  .join__left p {
+    margin: 0 0 1.2rem 0;
+    font-size: 1.6rem;
+  }
+
+  .join__left span {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .join__input-wrap input::placeholder {
+    font-size: .8rem;
+  }
+
+  .join__input-wrap .btn-green {
+    font-size: 1.2rem;
+  }
+
+  .join__right p {
+    padding: 0 0 0 2rem;
+    font-size: .8rem;
+  }
+
+  .category {
+    padding: 0 0 0.5rem;
+  }
+
+  .category li {
+    width: calc(100% - 3rem);
+    margin: 0 0 1.8rem 3rem;
+  }
+
+  .breadcrumbs__list li+li::before {
+    top: 0.35rem;
+  }
+
+  .breadcrumbs__list li {
+    font-size: .8rem;
+
+  }
+
+  .header--page {
+    background-color: #fff;
+  }
+
+  .category__title {
+    margin: 0px 0 3rem;
+  }
+
+  .category img {
+    height: 12.6rem;
+    width: 10.1rem;
+  }
+
+  .sale {
+    padding: 1.5rem 0 7.5rem;
+  }
+
+  .sale__slider-inner {
+    max-width: 90%;
+    padding: 2.2rem 2rem 2.8rem;
+  }
+
+  .sale b {
+    margin: 0 0 1rem 0;
+  }
+
+  .sale__slider-item a {
+    margin: auto 0 0 0;
+  }
+  .sale .slick-dots {
+    bottom: -4rem;
+  }
+
+
+
+
+
+
+
+
+  .footer__inner {
+    padding: 2rem 0 3rem;
+  }
+
+  .footer nav,
+  .footer__box,
+  .footer__coll,
+  .footer__date {
+    width: 100%;
+    margin: 0 0 1.9rem 0;
+  }
+
+  .footer__soc {
+    margin: 1rem 0 0 0;
+  }
+
+  .footer__box p {
+    width: 100%;
+    line-height: 120%;
+  }
+
+  .footer a,
+  .footer__date-boxx span {
+    font-size: 1.2rem;
+  }
+
+  .footer__bot {
+    padding: 1.5rem 0 3rem;
+  }
+
+  .footer__bot p {
+    font-size: .8rem;
+    letter-spacing: 0;
+  }
+}
