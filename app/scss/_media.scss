@@ -194,6 +194,20 @@
   .sale__slider-inner {
     min-height: 40rem;
   }
+
+  .modal-search {
+    height: 10.4rem;
+    padding: 3rem;
+  }
+
+  .modal-search input {
+    padding: 1rem 1.5rem 1rem 7rem;
+    height: 4.4rem;
+    font-size: 1.4rem;
+    &::placeholder {
+      font-size: 1.4rem;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -265,10 +279,17 @@
   .sale__slider-inner {
     min-height: 34.6rem;
   }
+
+  .modal-search{
+    top: 5rem !important;
+  }
 }
 
 
 @media (max-width: 500px) {
+  .modal-search{
+    padding: 3rem 1.5rem;
+  }
   .product-list {
     margin: 0 0 0 -1.5rem;
   }
@@ -572,6 +593,7 @@
   .sale__slider-item a {
     margin: auto 0 0 0;
   }
+
   .sale .slick-dots {
     bottom: -4rem;
   }

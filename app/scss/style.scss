@@ -2,6 +2,7 @@
 @import "lists";
 @import "slider";
 @import "buttons";
+@import "modal";
 
 
 .header {
@@ -52,6 +53,25 @@
     }
   }
 
+  &__search {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: linear .2s;
+
+    img {
+      width: 1.4rem;
+      height: 1.6rem;
+      object-fit: contain;
+    }
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+
   &__viber {
     width: 4rem;
     height: 4rem;
@@ -63,12 +83,7 @@
     img {
       width: 1.4rem;
       height: 1.6rem;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
+      object-fit: contain;
     }
 
     &:hover {
@@ -85,14 +100,9 @@
     transition: linear .2s;
 
     img {
-      width: 1.6rem;
-      height: 1.4rem;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
+      width: 1.4rem;
+      height: 1.6rem;
+      object-fit: contain;
     }
 
     &:hover {
@@ -845,12 +855,14 @@
     p {
       font-size: 1.6rem;
     }
-    span{
+
+    span {
       background-color: #FFB800;
     }
   }
-  &--page-two{
-    span{
+
+  &--page-two {
+    span {
       background-color: #FF3838;
     }
   }
