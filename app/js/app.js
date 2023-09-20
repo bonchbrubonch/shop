@@ -78,6 +78,14 @@ $(function () {
     readOnly: true
   });
 
+  $(".rateYo-tab").rateYo({
+    starWidth: "15px",
+    ratedFill: "#FFA800",
+    spacing: "3px",
+    rating: 0,
+
+  });
+
   $(".card__like").on("click", function () {
     $(this).toggleClass("active");
   });
@@ -85,6 +93,29 @@ $(function () {
   $(".card__backet").on("click", function () {
     $(this).toggleClass("active");
   });
+
+  $(".type").select2({
+    minimumResultsForSearch: -1
+  });
+
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 100,
+    max: 30000,
+    from: 250,
+    to: 25000,
+    postfix: "грн"
+  });
+
+  $('.tab__inner').each(function() {
+    let ths = $(this);
+    ths.find('.tab__item').not(':first').hide();
+    ths.find('.tab__btn').click(function() {
+      ths.find('.tab__btn').removeClass('active').eq($(this).index()).addClass('active');
+      ths.find('.tab__item').hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass('active');
+  });
+
 
   $('.review__slider').slick({
     slidesToShow: 5,
@@ -165,28 +196,26 @@ $(function () {
     ]
   });
 
-
-  $(".type").select2({
-    minimumResultsForSearch: -1
+  $('.product__slider-bottom').slick({
+    vertical: true,
+    verticalSwiping: true,
+    slidesToShow: 4,
+    infinite: true,
+    focusOnSelect: true,
+    
+    asNavFor: '.product__slider-top',
+    nextArrow: '<button class="right"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="31" viewBox="0 0 40 31" fill="none"><path d="M32.4836 10.9688L20.301 20.1038L8.11836 10.9688C7.90069 10.8052 7.6085 10.7137 7.30423 10.7137C6.99997 10.7137 6.70777 10.8052 6.49011 10.9688C6.38472 11.0482 6.30099 11.143 6.24383 11.2476C6.18667 11.3523 6.15723 11.4646 6.15723 11.5781C6.15723 11.6916 6.18667 11.804 6.24383 11.9086C6.30099 12.0133 6.38472 12.1081 6.49011 12.1875L19.4503 21.9075C19.6779 22.0782 19.9832 22.1737 20.301 22.1737C20.6188 22.1737 20.9241 22.0782 21.1517 21.9075L34.1119 12.1894C34.218 12.1099 34.3024 12.0149 34.36 11.9099C34.4176 11.8049 34.4472 11.6921 34.4472 11.5781C34.4472 11.4642 34.4176 11.3514 34.36 11.2464C34.3024 11.1414 34.218 11.0464 34.1119 10.9669C33.8942 10.8033 33.602 10.7118 33.2977 10.7118C32.9935 10.7118 32.7013 10.8033 32.4836 10.9669V10.9688Z" fill="black"/></svg></button>',
   });
-
-  $(".js-range-slider").ionRangeSlider({
-    type: "double",
-    min: 100,
-    max: 30000,
-    from: 250,
-    to: 25000,
-    postfix: "грн"
+  $('.product__slider-top').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.product__slider-bottom',
+    dots: false,
+    arrows: false,
+    centerMode: true,
+    fade: true,
+    // focusOnSelect: true,
   });
-
-
-
-
-
-
-
-
-
 
 
 
