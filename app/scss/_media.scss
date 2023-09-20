@@ -148,6 +148,26 @@
     align-items: center;
   }
 
+  .box--filter {
+    .category-list__inner {
+      position: relative;
+    }
+
+    .category-list__close {
+      position: absolute;
+      top: 1rem;
+      right: 2.5rem;
+      width: 2.5rem;
+      height: 2.5rem;
+
+      &::after,
+      &::before {
+        width: 80%;
+        left: .2rem;
+      }
+    }
+  }
+
   .category-list__close {
     padding: 0;
     display: block;
@@ -155,6 +175,8 @@
     width: 2rem;
     height: 2rem;
     color: #fff;
+    background-color: #8B9F57;
+    border-radius: 50%;
 
     &::after,
     &::before {
@@ -475,7 +497,7 @@
       border-radius: 0.5rem 0.5rem 0 0;
     }
 
-    .header__languege-child:hover .header__languege-dropdown{
+    .header__languege-child:hover .header__languege-dropdown {
       padding: 0;
     }
 
@@ -494,6 +516,26 @@
   .header__languege {
     margin: 0;
     border: none;
+  }
+
+  .box__right--filters .card {
+    width: calc(33.33333% - 3rem);
+  }
+
+  .box__right--filters .title {
+    font-size: 3.2rem;
+  }
+
+  .popular-slider .slick-arrow {
+    top: -2.8rem;
+  }
+
+  .filter-btn {
+    display: flex;
+  }
+
+  .box--filter .category-list__inner>ul {
+    padding: 5rem 1.5rem 2rem 1.5rem;
   }
 }
 
@@ -544,10 +586,6 @@
     font-size: 2.2rem;
   }
 
-  .review .left {
-    top: -5.8rem;
-  }
-
   .preference h5 {
     font-size: 2rem;
   }
@@ -569,6 +607,30 @@
 
   .modal-search {
     top: 5rem !important;
+  }
+
+  .box__right--filters .card {
+    width: calc(50% - 3rem);
+  }
+
+  .box__right--filters .title {
+    font-size: 3rem;
+  }
+
+  .box__right--filters {
+    padding: 0 0 2rem 0;
+
+    .banner {
+      padding: 1.5rem 0 1.5rem;
+    }
+
+    .popular {
+      padding: 0 0 1.5rem;
+    }
+  }
+
+  .popular--filter .slick-list {
+    padding: 3rem 0;
   }
 }
 
@@ -783,10 +845,6 @@
     top: -0.6rem;
   }
 
-  .review .left {
-    top: -0.8rem;
-  }
-
   .review h5 {
     font-size: 1rem;
   }
@@ -886,7 +944,9 @@
     bottom: -4rem;
   }
 
-
+  .box__right--filters .card {
+    width: calc(50% - 1.5rem);
+  }
 
 
 

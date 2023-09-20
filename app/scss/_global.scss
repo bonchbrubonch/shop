@@ -61,9 +61,11 @@ body {
   line-height: 120%;
   letter-spacing: -0.03px;
 }
-body.lock{
+
+body.lock {
   overflow: hidden;
 }
+
 .container {
   max-width: 185rem;
   padding: 0px 1.5rem;
@@ -169,3 +171,54 @@ body.lock{
 }
 
 /*end breadcrumbs=========*/
+
+/*start pagination===========*/
+.pagination {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  li {
+    button{
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    &+li {
+      margin-left: 1.5rem;
+    }
+  }
+
+  a,
+  span {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: .5rem;
+    border: .2rem solid transparent;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 140%;
+    text-align: center;
+    color: #16110C;
+    border: .1rem solid  rgba(209, 223, 163, 0.40);
+    &.active {
+      color: #fff;
+      background-color: #8B9F57;
+    }
+  }
+
+  a:hover {
+    border-color: #343C66;
+    color: #343C66;
+  }
+
+}
+
+/*end pagination===========*/
