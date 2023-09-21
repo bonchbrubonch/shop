@@ -700,6 +700,110 @@
     padding: 1rem;
   }
 
+  .contacts .tab__col-wrap {
+    flex-direction: column;
+  }
+
+  .contacts .tab__item-col {
+    width: 100% !important;
+  }
+
+  .contacts .tab__item-col:nth-child(2) {
+    margin: 6rem 0 0 0;
+  }
+
+  .contacts .title {
+    font-size: 3rem;
+    margin: 0 0 3rem 0;
+  }
+
+  .contacts h6 {
+    font-size: 2.4rem;
+  }
+
+  .contacts .tab__item-col>p {
+    max-width: 100%;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  .contacts a,
+  .contacts span {
+    font-size: 1.4rem;
+  }
+
+  .delivery h2,
+  .pay h2 {
+    font-size: 3rem;
+    margin: 0 0 3rem 0;
+  }
+
+  .delivery h3,
+  .pay h3 {
+    margin: 0 0 2rem 0;
+    font-size: 2rem;
+  }
+
+  .delivery p,
+  .delivery span,
+  .pay p,
+  .pay span {
+    font-size: 1.2rem;
+  }
+
+  .delivery h4 {
+    padding: 0 0 1rem 0;
+    margin: 1.5rem 0 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 120%;
+    border-bottom: 1px solid #d9d9d9;
+
+    span {
+      font-size: 1.8rem;
+    }
+  }
+
+  .pay__item {
+    margin: 0 0 3rem 0;
+  }
+
+  .pay {
+    padding: 3rem 0 4rem 0;
+  }
+
+  .delivery__box-item span,
+  .pay__item span {
+    width: 14rem;
+  }
+
+  .list-decimal li {
+    margin: 0 0 .6rem 0;
+  }
+
+  .page--cooperation {
+    padding: 0 0 5.5rem 0;
+
+    .pay h3 {
+      margin: 0 0 1.5rem 0;
+    }
+
+    .pay h5,
+    .delivery h5 {
+      font-size: 1.8rem;
+      margin: 1rem 0 0.5rem 0;
+    }
+
+    .pay h6,
+    .delivery h6 {
+      font-size: 1.4rem;
+      margin: 2rem 0 0.5rem 0;
+    }
+
+    .delivery {
+      margin: 0 0 3rem 0;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -875,9 +979,41 @@
     margin: 0 0 2rem 1rem;
     font-size: 1rem;
   }
-  .tab .btn-green{
+
+  .tab .btn-green {
     font-size: 1rem;
   }
+
+  .contacts {
+    padding: 0 0 3rem 0;
+  }
+
+  .delivery__inner,
+  .pay__inner {
+    padding: 2rem 1rem;
+  }
+
+  .delivery__box-item span,
+  .pay__item span {
+    width: 8rem;
+  }
+
+  .delivery {
+    margin: 0 0 3rem 0;
+  }
+
+  .pay__inner>p {
+    margin: 0 0 2rem 0;
+  }
+
+  .pay__item span {
+    font-size: 1.4rem;
+  }
+
+  .pay__item {
+    margin: 0 0 2rem 0;
+  }
+
 }
 
 
@@ -1239,7 +1375,47 @@
     margin: 0 0 2.5rem 0;
   }
 
+  .contacts__item {
+    width: 100%;
+  }
 
+  .contacts__item--meil {
+    margin: 0;
+  }
+
+  .page.page--all {
+    .breadcrumbs {
+      margin: 2.2rem 0 0 0;
+    }
+
+    .breadcrumbs__inner {
+      padding: 0;
+    }
+  }
+
+  .contacts b {
+    font-size: 1.2rem;
+  }
+
+  .contacts__box {
+    padding: 1.8rem 0 0 0;
+  }
+
+  .contacts__item:nth-child(1) {
+    order: 1;
+  }
+
+  .contacts__item:nth-child(2) {
+    order: 3;
+  }
+
+  .contacts__item:nth-child(3) {
+    order: 2;
+  }
+
+  .contacts__box-soc {
+    order: 4;
+  }
 
 
 
