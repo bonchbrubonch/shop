@@ -1318,7 +1318,7 @@
     }
 
     .category-list__inner>ul {
-      height: 69rem;
+      height: 54rem;
     }
   }
 }
@@ -1492,7 +1492,7 @@
 
   b {
     display: flex;
-    margin: 0 0 2rem 0;
+    margin: 0 0 4.7rem 0;
     color: #16110C;
     font-size: 1.4rem;
     font-weight: 500;
@@ -2370,6 +2370,14 @@
   .delivery {
     margin: 0 0 9rem 0;
   }
+}
+
+.range {
+  height: 9.1rem;
+}
+
+.range__box {
+  height: 6rem;
 }
 
 /*end pay-delivery===============*/

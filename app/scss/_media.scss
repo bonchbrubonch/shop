@@ -10,6 +10,10 @@
   .product__box-item {
     width: 100%;
   }
+
+  .box--filter .category-list {
+    width: 17.5%;
+  }
 }
 
 
@@ -804,6 +808,20 @@
       margin: 0 0 3rem 0;
     }
   }
+  .range{
+    height: 8.6rem;
+  }
+  .range__box{
+    height: 5.5rem;
+  }
+  .box--filter .category-list__inner>ul{
+    height: calc(100vh - 14.1rem);
+  }
+  .range {
+    padding: .5rem 2.5rem 0;
+    width: 100% !important;
+  }
+
 }
 
 @media (max-width: 767px) {
