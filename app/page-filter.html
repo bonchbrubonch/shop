@@ -300,11 +300,17 @@
               <div class="category-list__inner">
                 <button class="category-list__close"></button>
                 <ul>
-                  <button class="category-list__title">
+                  <button class="category-list__title  active">
                     Назва фільту
                     <img src="images/dest/icons/arrow-lang.svg" alt="arrow">
                   </button>
                   <ul class="category-list__chek-list">
+                    <li>
+                      <button class="category-list__chek active">
+                        <span></span>
+                        Параметр
+                      </button>
+                    </li>
                     <li>
                       <button class="category-list__chek">
                         <span></span>
@@ -312,13 +318,7 @@
                       </button>
                     </li>
                     <li>
-                      <button class="category-list__chek active">
-                        <span></span>
-                        Параметр
-                      </button>
-                    </li>
-                    <li>
-                      <button class="category-list__chek active">
+                      <button class="category-list__chek">
                         <span></span>
                         Параметр
                       </button>
@@ -745,19 +745,18 @@
                       </button>
                     </li>
                   </ul>
-                  <div class="range">
-                    <b>Ціна</b>
-                    <form>
-                      <input type="text" class="js-range-slider" name="my_range" value="" />
-                      <button type="submit">Search</button>
-                    </form>
-                  </div>
-                  <div class="range__box">
-                    <button class="category-list__filter-acept">Застосувати</button>
-                    <button class="category-list__filter-clear">Очистити</button>
-                  </div>
                 </ul>
-
+                <div class="range">
+                  <b>Ціна</b>
+                  <form>
+                    <input type="text" class="js-range-slider" name="my_range" value="" />
+                    <button type="submit">Search</button>
+                  </form>
+                </div>
+                <div class="range__box">
+                  <button class="category-list__filter-acept">Застосувати</button>
+                  <button class="category-list__filter-clear">Очистити</button>
+                </div>
               </div>
             </div>
 
@@ -2372,27 +2371,47 @@
             <span>Пошук</span>
           </a>
 
-          <div class="underfooter__col">
-            <ul class="header__languege">
-              <li class="header__languege-child">
-                <span>UA</span>
-                <div class="header__languege-dropdown-wrap">
-                  <ul class="header__languege-dropdown">
-                    <li>
-                      <a href="#">UA</a>
-                    </li>
-                    <li>
-                      <a href="#">EN</a>
+          <div class="underfooter">
+            <div class="container">
+              <div class="underfooter__inner">
+                <a href="#" class="underfooter__col">
+                  <img src="images/dest/icons/user.svg" alt="icon">
+                  <span>Кабінет</span>
+                </a>
+                <a href class="underfooter__col">
+                  <img src="images/dest/icons/heart.svg" alt="icon">
+                  <span>Обране</span>
+                </a>
+                <a href class="underfooter__col header__search" data-fancybox data-src="#modal-1">
+                  <img src="images/dest/icons/search.svg" alt="icon">
+                  <span>Пошук</span>
+                </a>
+                
+                <div class="underfooter__col">
+                  <ul class="header__languege">
+                    <li class="header__languege-child">
+                      <span>UA</span>
+                      <div class="header__languege-dropdown-wrap">
+                        <ul class="header__languege-dropdown">
+                          <li>
+                            <a href="#">UA</a>
+                          </li>
+                          <li>
+                            <a href="#">EN</a>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                   </ul>
+                  <span>Мова</span>
                 </div>
-              </li>
-            </ul>
-            <span>Мова</span>
+                <button class="underfooter__btn">
+                  <img src="images/dest/icons/burger.svg" alt="icon">
+                  <span>Каталог</span>
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
   </div>
   <div class="modal-search" id="modal-1">
     <div class="container">

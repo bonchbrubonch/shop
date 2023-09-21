@@ -66,3 +66,13 @@
   border: .1rem solid rgba(209, 223, 163, 0.40) !important;
   background-color: #fff !important;
 }
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: rgba(#8B9F57, .4);
+  color: #000;
+}
+
+.select2-container--default .select2-results__option--selected {
+   background-color: #8B9F57 !important;
+   color: #fff !important;
+}
