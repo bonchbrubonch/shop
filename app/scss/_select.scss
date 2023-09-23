@@ -29,6 +29,11 @@
     width: 100% !important;
   }
 
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
   .select2-container--default .select2-selection--single .select2-selection__arrow b {
     display: block;
     border: none;
@@ -36,8 +41,9 @@
     margin-left: -.4rem;
     margin-top: -.2rem;
     position: absolute;
-    left: .4rem;
-    top: .5rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: .8rem;
     background-image: url("../images/dest/icons/arrow-filter.svg");
     background-repeat: no-repeat;
@@ -54,8 +60,8 @@
 }
 
 .select2-dropdown {
-  top: 8px;
-  border-radius: 8px !important;
+  top: .8rem;
+  border-radius: .8rem !important;
   border: .1rem solid rgba(209, 223, 163, 0.40) !important;
   background-color: #fff !important;
   overflow: hidden;
@@ -65,6 +71,11 @@
   border-radius: .5rem !important;
   border: .1rem solid rgba(209, 223, 163, 0.40) !important;
   background-color: #fff !important;
+  height: 2.8rem;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 2.8rem;
 }
 
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
@@ -73,6 +84,33 @@
 }
 
 .select2-container--default .select2-results__option--selected {
-   background-color: #8B9F57 !important;
-   color: #fff !important;
+  background-color: #8B9F57 !important;
+  color: #fff !important;
+}
+
+.select2-search--dropdown .select2-search__field {
+  border-radius: .8rem;
+  background-color: rgba(217, 217, 217, 0.30);
+  border: none !important;
+  outline: none;
+  height: 3.4rem;
+  padding: 0.4rem 3rem;
+}
+
+.select2-search--dropdown {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("../images/dest/icons/search.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
 }

@@ -30,6 +30,9 @@
 }
 
 .btn-green {
+  display: flex;
+  width: fit-content;
+  align-items: center;
   color: #FFF;
   text-align: center;
   font-size: 1.4rem;

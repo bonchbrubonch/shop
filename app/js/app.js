@@ -26,6 +26,11 @@ $(function () {
     $("body").addClass("lock");
   });
 
+  $(".order__radio").on("click", function () {
+    $(".order__radio").removeClass("active");
+    $(this).addClass("active");
+  });
+
 
   $(".navigation__item-child").on("click", function () {
     $(this).toggleClass("active");
@@ -97,6 +102,20 @@ $(function () {
   $(".type").select2({
     minimumResultsForSearch: -1
   });
+
+  $(".region").select2({
+     placeholder: "Область",
+  });
+
+  $(".point").select2({
+     placeholder: "Населений пункт",
+  });
+
+  $(".branch").select2({
+     placeholder: "№ Відділення",
+  });
+
+
 
   $(".js-range-slider").ionRangeSlider({
     type: "double",
