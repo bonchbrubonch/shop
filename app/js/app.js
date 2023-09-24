@@ -31,6 +31,16 @@ $(function () {
     $(this).addClass("active");
   });
 
+  $(".cabinet__nav-item").on("click", function () {
+    $(".cabinet__nav-item").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  $("a.underfooter__col").on("click", function () {
+    $("a.underfooter__col").removeClass("active");
+    $(this).addClass("active");
+  });
+
 
   $(".navigation__item-child").on("click", function () {
     $(this).toggleClass("active");
@@ -126,12 +136,12 @@ $(function () {
     postfix: "грн"
   });
 
-  $('.tab__inner').each(function() {
+  $('.tab__inner, .login__inner').each(function() {
     let ths = $(this);
-    ths.find('.tab__item').not(':first').hide();
-    ths.find('.tab__btn').click(function() {
-      ths.find('.tab__btn').removeClass('active').eq($(this).index()).addClass('active');
-      ths.find('.tab__item').hide().eq($(this).index()).fadeIn()
+    ths.find('.tab__item, .login__item').not(':first').hide();
+    ths.find('.tab__btn, .login__btn').click(function() {
+      ths.find('.tab__btn, .login__btn').removeClass('active').eq($(this).index()).addClass('active');
+      ths.find('.tab__item, .login__item').hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass('active');
   });
 
