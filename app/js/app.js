@@ -41,6 +41,10 @@ $(function () {
     $(this).addClass("active");
   });
 
+  $(".cabinet__input-show").on("click", function () {
+    $(this).toggleClass("show");
+  });
+
 
   $(".navigation__item-child").on("click", function () {
     $(this).toggleClass("active");
@@ -267,5 +271,18 @@ $(window).scroll(function () {
   } else if (scrolled < navOffset) {
     $('header').removeClass("sticky animate__animated animate__fadeInDown");
     $('header').next().removeClass("margin-top");
+  }
+});
+
+
+const upOffset = $(".up").offset().top + 600;
+$(window).scroll(function () {
+
+  const scroll = $(this).scrollTop();
+
+  if (scroll > upOffset) {
+    $('.up').addClass("active");
+  } else if (scroll < upOffset) {
+    $('.up').removeClass("active");
   }
 });

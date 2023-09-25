@@ -102,6 +102,7 @@ body.page{
 }
 
 .up {
+  display: none;
   position: fixed;
   right: 5rem;
   bottom: 10rem;
@@ -122,7 +123,9 @@ body.page{
     object-fit: contain;
   }
 }
-
+.up.active{
+  display: block;
+}
 /*start breadcrumbs=========*/
 .breadcrumbs {
   background-color: transparent;

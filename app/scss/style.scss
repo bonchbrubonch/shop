@@ -241,6 +241,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     img {
       width: 1.6rem;
@@ -275,8 +276,105 @@
         opacity: .6;
       }
     }
+
+    .header__box-drop {
+      width: 46rem;
+      padding: 3rem 2rem;
+      position: absolute;
+      right: 0;
+      top: 4rem;
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-1rem);
+      transition: all .2s ease;
+      border-radius: 14px;
+      background-color: #FFF;
+      box-shadow: .2rem .2rem 5rem 0 rgba(0, 0, 0, 0.10);
+      z-index: 100;
+      .bacsket__item {
+        margin: 0 0 1.5rem 0;
+        padding: 0;
+        border-radius: 0;
+        background-color: #fff;
+        box-shadow: none;
+      }
+
+      .bacsket__box {
+        flex-wrap: wrap;
+      }
+
+      .bacsket__price,
+      .calc {
+        display: none;
+      }
+
+      .bacsket__amount,
+      .bacsket__sum b {
+        display: flex;
+      }
+
+      h6 {
+        margin: 0 0 0.4rem 0;
+        max-width: 100%;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 120%;
+      }
+
+      .bacsket__img {
+        width: 6.5rem;
+        height: 6.5em;
+        margin: 0 2rem 0 2rem;
+        flex-shrink: 0;
+      }
+
+      .bacsket__sum {
+        display: flex;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 120%;
+        color: #8B9F57;
+
+        b {
+          padding: 0 0.2rem;
+          font-weight: 500;
+        }
+      }
+
+      .bacsket__close {
+        width: 1.6rem;
+        height: 1.6rem;
+        top: 0rem;
+        left: 0rem;
+      }
+    }
+
+    &:hover {
+      .header__box-drop {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1 !important;
+      }
+    }
+
   }
 
+  &__drop-price {
+    padding: 2.4rem 0;
+    display: flex;
+    justify-content: space-between;
+    color: #16110C;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 120%;
+    border-top: 1px solid #5E674D;
+  }
+&__drop-btns{
+  display: flex;
+  .btn-green{
+    margin: 0 0 0 2rem;
+  }
+}
   &__menu-btn {
     display: none;
   }
@@ -661,8 +759,11 @@
   }
 
   &__close {
+    padding: 0;
     width: 2rem;
     height: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
     background-color: transparent;
     outline: none;
     border: none;
@@ -670,6 +771,12 @@
     position: absolute;
     top: 2.7rem;
     right: 1.5rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__like {

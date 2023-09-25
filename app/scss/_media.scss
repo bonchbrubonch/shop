@@ -1020,6 +1020,36 @@
   .cabinet .card {
     width: calc(33.33333% - 3rem);
   }
+
+  .modal .cabinet__input-wrap {
+    position: relative;
+    width: calc(100% - 3rem);
+    margin: 0 0 1.5rem 3rem;
+  }
+
+  .modal .lg {
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .modal input {
+    padding: 1.3rem 1.3rem;
+    font-size: 1.2rem;
+  }
+
+  .modal {
+    padding: 2rem 1rem;
+  }
+
+  .modal h3 {
+    font-size: 2rem;
+    padding: 0 0 1rem 0;
+    margin: 0 0 1.7rem 0;
+  }
+
+  .header__box .header__box-drop {
+    right: -4rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1963,9 +1993,31 @@
     right: 1rem;
   }
 
+  .header__box .header__box-drop {
+    padding: 2rem 1rem;
+    width: 31rem;
+  }
 
+  .header__box .header__box-drop .bacsket__img {
+    width: 4.5rem;
+    height: 4.5em;
+    margin: 0 1rem 0 1rem;
+  }
 
+  .header__box .header__box-drop h6,
+  .header__box .header__box-drop .bacsket__sum {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+  }
 
+  .header__drop-price {
+    padding: 1.8rem 0;
+    font-size: 1.2rem;
+  }
+  .header__drop-btns .btn-transparent,
+  .header__drop-btns .btn-green{
+    font-size: 1.2rem;
+  }
   .footer__inner {
     padding: 2rem 0 3rem;
   }

@@ -21,6 +21,7 @@
     background-color: #FFF;
     outline: none;
     font-size: 1.6rem;
+
     &::placeholder {
       color: #ADB5BD;
       font-size: 1.6rem;
@@ -59,4 +60,91 @@
 
 .fancybox-bg {
   background: rgba(#1e1e1e, .4) !important;
+}
+
+.modal {
+  max-width: 113rem;
+  width: 100%;
+  padding: 3rem;
+  border-radius: 1.2rem;
+  background-color: #FFF;
+  box-shadow: .2rem .2rem 5rem 0 rgba(0, 0, 0, 0.10);
+
+  h3 {
+    padding: 0 0 2rem 0;
+    margin: 0 0 4rem 0;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 120%;
+    border-bottom: 0.1rem solid #8b9f57;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .fancybox-close-small {
+    top: 3rem;
+    right: 3rem;
+    width: 2rem;
+    height: 2rem;
+    background-image: url("../images/dest/icons/close-modal.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+  }
+
+  .cabinet__input-box {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 -3rem;
+  }
+
+  .cabinet__input-wrap {
+    position: relative;
+    width: calc(33.33333% - 3rem);
+    margin: 0 0 3rem 3rem;
+  }
+
+  input {
+    padding: 1.2rem 2rem;
+    height: 4.1rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid rgba(139, 159, 87, .4);
+    background-color: #fff;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 120%;
+    outline: 0;
+  }
+
+  .btn-green {
+    margin: 3rem 0 0 0;
+  }
+
+  .cabinet__input-show {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/dest/icons/eye-1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .cabinet__input-show.show{
+    background-image: url("../images/dest/icons/eye-2.svg");
+  }
+  .lg{
+    width: 100%;
+    margin: 0 0 3rem 0;
+  }
+
 }
