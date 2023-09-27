@@ -513,6 +513,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: flex-end;
     }
 
     img,
@@ -1525,8 +1526,13 @@
   }
 
   .product-list {
+    margin: 0 0 0 -3rem;
+  }
+
+  .cabinet .product-list {
     margin: 0 0 0 -1.5rem;
   }
+
 
   .cabinet .card {
     margin: 0 0 1.5rem 1.5rem;

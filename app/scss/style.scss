@@ -361,7 +361,7 @@
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 120%;
-    border-top: 1px solid #5E674D;
+    border-top: 1px solid #5E674D !important;
   }
 &__drop-btns{
   display: flex;
@@ -1791,7 +1791,7 @@
   &__box {
     margin: 0 0 2.8rem 0;
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   &__box-item {
@@ -1827,6 +1827,7 @@
     font-weight: 400;
     line-height: 100%;
     text-decoration: line-through;
+    white-space: nowrap;
   }
 
   &__box-price {
@@ -1834,6 +1835,7 @@
     font-size: 3.8rem;
     font-weight: 500;
     line-height: 90%;
+    white-space: nowrap;
   }
 
   &__bonus {
@@ -3381,7 +3383,12 @@
     display: flex;
     align-items: center;
     border-bottom: .1rem solid rgba(139, 159, 87, 0.40);
-
+    transition: linear .1s;
+    &:hover{
+      background-color: rgba(139, 159, 87, 0.40);
+      border-bottom: .1rem solid rgba(139, 159, 87, 0.40);
+      border-radius: .8rem;
+    }
     a {
       display: block;
       width: fit-content;
