@@ -1681,9 +1681,13 @@
   }
 
   .card .rateYo {
-    zoom: .7;
+    // zoom: .7;
+    transform: scale(.7);
+    margin: 0 0 0 -1.5rem;
   }
-
+  // .rateYo .jq-ry-container{
+  //   padding: 0 !important;
+  // }
   .card__amount {
     font-size: .8rem;
     margin: 0.3rem 0 0 0;
