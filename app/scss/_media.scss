@@ -1538,7 +1538,6 @@
     margin: 0 0 1.5rem 1.5rem;
     width: calc(50% - 1.5rem);
   }
-
 }
 
 
@@ -1681,13 +1680,10 @@
   }
 
   .card .rateYo {
-    // zoom: .7;
     transform: scale(.7);
     margin: 0 0 0 -1.5rem;
   }
-  // .rateYo .jq-ry-container{
-  //   padding: 0 !important;
-  // }
+
   .card__amount {
     font-size: .8rem;
     margin: 0.3rem 0 0 0;
@@ -2024,10 +2020,28 @@
     padding: 1.8rem 0;
     font-size: 1.2rem;
   }
+
   .header__drop-btns .btn-transparent,
-  .header__drop-btns .btn-green{
+  .header__drop-btns .btn-green {
     font-size: 1.2rem;
   }
+
+  .filter {
+    max-width: 20rem;
+    width: 100%;
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+      max-width: 12rem;
+    }
+  }
+
+  .page-filter .select2-container--open .select2-dropdown--below {
+    width: 20rem !important;
+    left: auto;
+    right: -13rem;
+  }
+
+
   .footer__inner {
     padding: 2rem 0 3rem;
   }
